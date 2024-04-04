@@ -4,7 +4,12 @@
 class Vector
 {
 public:
-	Vector() : x(10), y(-7), z(-3)
+	Vector() : x(0), y(0), z(0)
+	{
+
+	}
+
+	Vector(float _x, float _y, float _z) : x(_x), y(_y), z(_z)
 	{
 
 	}
@@ -26,7 +31,7 @@ private:
 
 int main() 
 {
-	static Vector v;
+	Vector v (10, -7, -3);
 	v.Show();
 	v.Modul();
 }
